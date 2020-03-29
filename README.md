@@ -1,5 +1,8 @@
 # AWS VPC Dns Forwarder Terraform module
 
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/angelabad/terraform-aws-vpc-dns-forwarder)](https://github.com/angelabad/terraform-aws-vpc-dns-forwarder/releases)
+[![Vpc Dns Forwarder](https://circleci.com/gh/angelabad/terraform-aws-vpc-dns-forwarder.svg?style=shield)](https://app.circleci.com/pipelines/github/angelabad/terraform-aws-vpc-dns-forwarder)
+
 Terraform module which creates [dns domain forwarder with Route53 Resolver](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries.html) on AWS
 
 These types of resources are supported:
