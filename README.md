@@ -8,7 +8,7 @@ Terraform module which creates [dns domain forwarder with Route53 Resolver](http
 These types of resources are supported:
 
 * [Route53 Resolver Endpoint](https://www.terraform.io/docs/providers/aws/r/route53_resolver_endpoint.html)
-* [Route53 Resolver Rule](https://www.terraform.io/docs/providers/aws/r/route53_resolver_rule.html) 
+* [Route53 Resolver Rule](https://www.terraform.io/docs/providers/aws/r/route53_resolver_rule.html)
 
 ## Features
 
