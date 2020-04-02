@@ -1,5 +1,5 @@
 locals {
-  flattenresolvers = formatlist("%s/32", flatten(var.forwarders[*].resolvers))
+  flattenresolvers = formatlist("%s/32", flatten(distinct(var.forwarders[*].resolvers)))
   associate_vpcs = flatten([
     for forwarder_key, forwarder in var.forwarders : [
       for vpc_key, vpc in forwarder.associate_vpcs : {
