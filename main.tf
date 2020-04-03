@@ -68,11 +68,8 @@ resource "aws_route53_resolver_rule" "this" {
 }
 
 resource "aws_route53_resolver_rule_association" "this" {
-  for_each = {
-    for forwarder in local.associate_vpcs : "${forwarder.domain}_${forwarder.vpc}" => forwarder
-  }
+  count = length(local.associate_vpcs)
 
-  //name             = replace(each.value.domain, ".", "_")
-  resolver_rule_id = aws_route53_resolver_rule.this[each.value.forwarder_key].id
-  vpc_id           = each.value.vpc
+  resolver_rule_id = aws_route53_resolver_rule.this[local.associate_vpcs[count.index].forwarder_key].id
+  vpc_id           = local.associate_vpcs[count.index].vpc
 }
