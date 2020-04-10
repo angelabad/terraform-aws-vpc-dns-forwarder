@@ -52,7 +52,7 @@ module "myendpoint" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:-----:|
-| forwarders | A list of objects representing forwarders, with associated vpcs, domain name and resolvers ip list | <pre>list(<br>    object({<br>      associate_vpcs = list(string)<br>      domain         = string<br>      resolvers      = list(string)<br>    })<br>  )</pre> | n/a | yes |
+| forwarders | A list of objects representing forwarders, with associated vpcs, domain name and resolvers ip list | <pre>list(<br>    object({<br>      associate_vpcs = list(string)<br>      domain         = string<br>      resolvers      = list(string)<br>    })<br>  )</pre> | `[]` | no |
 | name | Route53 resolver endpoint name | `string` | n/a | yes |
 | subnets | A list of VPC Subnet IDs to launch in | `list(string)` | n/a | yes |
 | tags | A mapping of tags to assign to the resource | `map(string)` | n/a | yes |

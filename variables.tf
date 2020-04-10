@@ -17,6 +17,7 @@ variable "forwarders" {
       resolvers      = list(string)
     })
   )
+  default = []
 }
 
 variable "tags" {

@@ -25,6 +25,8 @@ resource "aws_security_group" "this" {
 }
 
 resource "aws_security_group_rule" "endpoint_dns" {
+  count = length(local.flattenresolvers) == 0 ? 0 : 1
+
   from_port         = 53
   to_port           = 53
   protocol          = -1
