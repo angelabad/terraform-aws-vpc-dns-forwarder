@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Bug Fixes
+- Create example README file
+
 
 <a name="v1.2.0"></a>
 ## [v1.2.0] - 2020-04-04
