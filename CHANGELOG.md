@@ -2,6 +2,15 @@
 ## [Unreleased]
 
 
+<a name="v1.2.2"></a>
+## [v1.2.2] - 2020-11-11
+### Bug Fixes
+- Update README example code
+
+### Pull Requests
+- Merge pull request [#1](https://github.com/angelabad/terraform-aws-vpc-dns-forwarder/issues/1) from angelabad/develop
+
+
 <a name="v1.2.1"></a>
 ## [v1.2.1] - 2020-04-10
 ### Bug Fixes
@@ -38,7 +47,8 @@
 - Initial code commit
 
 
-[Unreleased]: https://github.com/angelabad/terraform-aws-vpc-dns-forwarder/compare/v1.2.1...HEAD
+[Unreleased]: https://github.com/angelabad/terraform-aws-vpc-dns-forwarder/compare/v1.2.2...HEAD
+[v1.2.2]: https://github.com/angelabad/terraform-aws-vpc-dns-forwarder/compare/v1.2.1...v1.2.2
 [v1.2.1]: https://github.com/angelabad/terraform-aws-vpc-dns-forwarder/compare/v1.2.0...v1.2.1
 [v1.2.0]: https://github.com/angelabad/terraform-aws-vpc-dns-forwarder/compare/v1.1.0...v1.2.0
 [v1.1.0]: https://github.com/angelabad/terraform-aws-vpc-dns-forwarder/compare/v1.0.0...v1.1.0
