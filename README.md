@@ -21,7 +21,7 @@ With this configuration your vpcs will resolve these domains with corresponding 
 
 ```hcl
 module "myendpoint" {
-  source  = "angelabad/vpc-dns-forwarder"
+  source  = "angelabad/vpc-dns-forwarder/aws"
   version = "1.0.0"
 
   name    = "myendpoint"
